@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) round;
+  border-image-slice: 10%;
+}
+
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) round;
+  border-image-slice: 20%;
+}
+
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) round;
+  border-image-slice: 30%;
+}
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image-source: url(border.png);  
+  border-image-slice: 30;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image-slice Property</h1>
+
+<p id="borderimg1">border-image-slice: 10%;</p>
+<p id="borderimg2">border-image-slice: 20%;</p>
+<p id="borderimg3">border-image-slice: 30%;</p>
+
+<p>Here is the image used:</p>
+<img src="border.png">
+<p>The border-image-source property specifies the image to be used as the border around an element:</p>
+<p id="borderimg">Hello World!</p>
+
+<p>Here is the original image:</p>
+<img src="border.png">
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image-source property.</p>
+
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image-slice property.</p>
+
+</body>
+</html>
